@@ -1,47 +1,100 @@
-# Laptop Remote & Battery Widget
+# Dom's Laptop Remote & Battery Widget
 
-This project contains two components that work together:
+A cross‑platform project combining a Flutter Android app and a Python backend to remotely monitor and control a Windows laptop. It includes a standalone battery widget, a REST API server, and a clean mobile UI for quick access to system information and power controls.
 
-- A Flutter Android app that remotely controls your laptop and displays system information
-- A Python backend that provides battery status, system metrics, and remote control actions
-- A standalone battery widget that runs on the laptop when the phone isn’t connected
+## 🚀 Features
 
-It’s a simple but powerful companion setup that lets you monitor and control your laptop from your Android device.
-
-## Features
-
-- Battery percentage and charging status
+### 📱 Flutter Android App
+- Live battery percentage and charging status
 - CPU, RAM, and disk usage
 - Temperature monitoring (if supported)
-- Power controls (shutdown, restart, sleep, lock)
-- Volume and brightness control
+- Power controls:
+  - Shutdown
+  - Restart
+  - Sleep
+  - Lock
 - Display off
+- Volume and brightness control
 - App launcher endpoints
-- Clean Flutter UI with Riverpod state management
+- Clean UI with Riverpod state management
 
-## Getting Started (Flutter App)
+### 🖥️ Python Backend (`backendandWidget`)
+- Flask REST API server (`server.py`)
+- Standalone battery widget (`BatteryMonitor.py`)
+- System information endpoints
+- Power control endpoints
+- Requirements file for easy setup
 
-If you're new to Flutter, here are some helpful resources:
+## 📂 Project Structure
 
-- Write your first Flutter app: https://docs.flutter.dev/get-started/codelab
-- Flutter Cookbook: https://docs.flutter.dev/cookbook
-- Flutter documentation: https://docs.flutter.dev/
+pc_remote/
+│
+├── backendandWidget/
+│   ├── server.py
+│   ├── BatteryMonitor.py
+│   ├── requirements.txt
+│   └── (other backend files)
+│
+├── flutter_app/ (or your Flutter project root)
+│   └── lib/
+│       └── ...
+│
+└── README.md
 
-## Python Backend
+## 🛠️ Backend Setup (Python)
 
-The backend runs on your laptop and exposes a REST API consumed by the Flutter app.
+1. Open a terminal inside the backend folder:
 
-You’ll find:
+   cd backendandWidget
 
-- battery_widget.py — standalone battery widget
-- server.py — Flask server providing system info and control endpoints
-- requirements.txt — dependencies
+2. Install dependencies:
 
-Run it with:
+   pip install -r requirements.txt
 
-pip install -r requirements.txt
-python server.py
+3. Run the server:
 
-## Project Purpose
+   python server.py
 
-This project started as a simple battery widget and evolved into a full remote‑control system for a laptop, accessible from an Android device.
+The server will start on your local network and the Flutter app will connect to it.
+
+## 📱 Flutter App Setup
+
+1. Install Flutter: https://docs.flutter.dev/get-started/install
+2. Open the Flutter project folder
+3. Run the app:
+
+   flutter run
+
+4. Make sure your phone and laptop are on the same Wi‑Fi network.
+
+## 🎯 Purpose
+
+This project started as a simple battery widget and evolved into a full remote‑control system for a laptop. It’s designed to be lightweight, fast, and practical — a companion tool that makes your laptop more accessible from your Android device.
+
+## 🙌 Credits
+
+### 👤 Project Author
+- **Dominic Radley** — full project creator, developer, designer, and architect  
+  - Flutter app development  
+  - Python backend development  
+  - UI/UX design  
+  - System integration  
+  - Repository structure and documentation  
+
+### 🛠️ Technologies & Tools
+- **Flutter** — mobile UI framework  
+- **Dart** — programming language for the Flutter app  
+- **Python** — backend logic and system control  
+- **Flask** — REST API server  
+- **psutil** — system information (CPU, RAM, battery, etc.)  
+- **pywin32 / ctypes** — Windows system control (if used)  
+- **Visual Studio / VS Code** — development environment  
+- **Git & GitHub** — version control and project hosting  
+
+### 💡 Inspiration & Purpose
+- Built to create a seamless way to monitor and control a laptop from an Android device  
+- Inspired by the desire for a lightweight, personal remote‑control companion  
+
+## 📄 License
+
+This project uses the MIT License (see LICENSE file).
