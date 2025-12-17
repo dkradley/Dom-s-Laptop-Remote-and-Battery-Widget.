@@ -1,0 +1,51 @@
+name: pc_remote
+description: A Flutter remote controller for your PC.
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State management
+  flutter_riverpod: ^2.5.0
+
+  # HTTP requests
+  http: ^1.2.0
+
+  # Persistent storage
+  shared_preferences: ^2.2.2
+
+  # Icons
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter_icons:
+  android: true
+  ios: false
+  image_path: "assets/icon.png"
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/icon.png
+
+  fonts:
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter-Regular.ttf
+        - asset: assets/fonts/Inter-Medium.ttf
+        - asset: assets/fonts/Inter-SemiBold.ttf
+        - asset: assets/fonts/Inter-Bold.ttf
