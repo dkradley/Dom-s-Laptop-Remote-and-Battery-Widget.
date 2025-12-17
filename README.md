@@ -97,4 +97,4 @@ This project started as a simple battery widget and evolved into a full remoteâ€
 
 ## ðŸ“„ License
 
-This project uses the MIT License (see LICENSE file).
+This project uses the GPL 3.0 License (see LICENSE file).
