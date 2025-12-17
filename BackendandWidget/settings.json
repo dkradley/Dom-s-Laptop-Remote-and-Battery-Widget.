@@ -1,0 +1,15 @@
+{
+    "position": "top-right",
+    "transparency": 0,
+    "theme": "light",
+    "icon_size": "medium",
+    "font_size": 10,
+    "color_thresholds": {
+        "low": 20,
+        "med": 30
+    },
+    "show_close_button": true,
+    "show_info": "both",
+    "update_interval": 5000,
+    "drag_enabled": true
+}
