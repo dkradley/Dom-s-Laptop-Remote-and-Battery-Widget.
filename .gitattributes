@@ -1,0 +1,25 @@
+# Normalize all text files to LF in the repo
+* text=auto eol=lf
+
+# Keep Python files consistent
+*.py text eol=lf
+
+# Keep Flutter/Dart files consistent
+*.dart text eol=lf
+
+# Keep JSON, YAML, and config files consistent
+*.json text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+
+# Keep Markdown consistent
+*.md text eol=lf
+
+# Binary files should never be modified
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.exe binary
+*.apk binary
