@@ -87,7 +87,7 @@ This project started as a simple battery widget and evolved into a full remote�
 - **Python** — backend logic and system control  
 - **Flask** — REST API server  
 - **psutil** — system information (CPU, RAM, battery, etc.)  
-- **pywin32 / ctypes** — Windows system control (if used)  
+- **pywin32 / ctypes** — Windows system control 
 - **Visual Studio / VS Code** — development environment  
 - **Git & GitHub** — version control and project hosting  
 
